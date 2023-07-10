@@ -1,4 +1,0 @@
-var config = {
-    steam : '',
-    discord : '',
-  }
