@@ -12,9 +12,9 @@ import os
 
 with open('config.json') as file:
     data = json.load(file)
-    steam_api_key = data['apiIDs']['steam']
-    discord_token = data['apiIDs']['discord']
-
+    steam_api_key = str(data['apiIDs']['steam'])
+    discord_token = str(data['apiIDs']['discord'])
+print(discord_token)
 steam_client = SteamClient(steam_api_key)
 TOKEN = discord_token
 
@@ -36,14 +36,14 @@ async def start(ctx):
     if not check.is_running():
         check.start(ctx)
 @client.command()
-async def stan(ctx):
+async def status(ctx):
     if myLoop.is_running():
          await ctx.send("Loop: Running")
     else:
          await ctx.send("Loop: Not Running")
 
 @client.command()
-async def cena(ctx):   
+async def prices(ctx):   
     global steam_client
     f = open('items.json', "r")
     data = json.load(f)
