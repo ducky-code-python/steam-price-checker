@@ -9,9 +9,15 @@ from steampy.utils import GameOptions
 from steampy.market import Currency
 import asyncio
 import os
-steam_client = SteamClient('steam api token')
 
-TOKEN = 'your discord bot token'
+with open('config.json') as file:
+    data = json.load(file)
+    steam_api_key = data['apiIDs']['steam']
+    discord_token = data['apiIDs']['discord']
+
+steam_client = SteamClient(steam_api_key)
+TOKEN = discord_token
+
 intent = discord.Intents.all()
 intent.members = True
 intent.message_content = True
