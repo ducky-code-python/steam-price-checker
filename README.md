@@ -1,5 +1,5 @@
 # steam-price-checker
-<!doctype html>
+
 <html>
 <head>
 
