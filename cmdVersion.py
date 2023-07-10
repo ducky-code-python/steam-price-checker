@@ -73,6 +73,7 @@ def dev():
     print("Done")
     input()
     os.system("cls")
+    start()
 
 def start():
     ans = input("Command: ")
@@ -89,5 +90,6 @@ def start():
         input()
         os.system("cls")
         start()
-
+    elif ans == "dev":
+        dev()
 start()
