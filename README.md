@@ -12,8 +12,8 @@ ids = to check id's of yours items<br>
 sellat (ID) (FLOAT) = with this you can edit sellat without editing json file<br>
 dev = for tests <br>
 
-For cmdVersion:
-Same commands but without start and status because this version doesn't have loop
+For cmdVersion:<br>
+Same commands but without start and status because this version doesn't have loop<br>
 
 You need to create *config.json* file and edit it like this!
 <br>
