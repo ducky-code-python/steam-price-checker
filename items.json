@@ -1,0 +1,53 @@
+{
+		"items_info" : [
+		{ 
+			"item" : "Sticker | Spirit (Holo) | 2020 RMR",
+			"quantity" : 1,
+			"cost" : 0.50,
+			"sellat" : 1.00,
+			"id" : 1
+		},
+		{
+			"item" : "Sticker | Virtus.pro (Holo) | 2020 RMR",
+			"quantity" : 1,
+			"cost" : 0.61,
+			"sellat" : 0.90,
+			"id" : 2
+		},
+		{ 
+			"item" : "Sticker | FURIA (Holo) | 2020 RMR",
+			"quantity" : 2,
+			"cost" : 0.48,
+			"sellat" : 0.90,
+			"id" : 3
+		},
+		{ 
+			"item" : "Sticker | Renegades (Holo) | 2020 RMR",
+			"quantity" : 5,
+			"cost" : 0.20,
+			"sellat" : 0.30,
+			"id" : 4
+		},
+		{ 
+			"item" : "Sticker | Ninjas in Pyjamas (Holo) | 2020 RMR",
+			"quantity" : 10,
+			"cost" : 0.20,
+			"sellat" : 0.30,
+			"id" : 5
+		},
+		{ 
+			"item" : "Sticker | Astralis | Katowice 2019",
+			"quantity" : 1,
+			"cost" : 1.37,
+			"sellat" : 1.70,
+			"id" : 6
+		},
+		{ 
+			"item" : "Sticker | Evil Geniuses (Holo) | 2020 RMR",
+			"quantity" : 10,
+			"cost" : 0.19,
+			"sellat" : 0.27,
+			"id" : 7
+		}
+	]
+}
