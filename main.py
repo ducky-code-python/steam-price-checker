@@ -14,7 +14,6 @@ with open('config.json') as file:
     data = json.load(file)
     steam_api_key = str(data['apiIDs']['steam'])
     discord_token = str(data['apiIDs']['discord'])
-print(discord_token)
 steam_client = SteamClient(steam_api_key)
 TOKEN = discord_token
 
