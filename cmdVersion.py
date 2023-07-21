@@ -1,5 +1,4 @@
 from steampy.client import SteamClient
-from dotenv import load_dotenv
 import json
 from steampy.utils import GameOptions
 from steampy.market import Currency

@@ -1,7 +1,6 @@
 from steampy.client import SteamClient
 from discord.ext import commands
 import discord
-from dotenv import load_dotenv
 import discord.ext.commands
 from discord.ext import tasks
 import json
