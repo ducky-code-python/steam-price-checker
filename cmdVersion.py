@@ -4,6 +4,8 @@ from steampy.utils import GameOptions
 from steampy.market import Currency
 import time
 import os
+import sys
+from termcolor import colored
 
 with open('config.json') as file:
     data = json.load(file)
@@ -23,7 +25,7 @@ def prices():
         cost = x['cost']
         market = steam_client.market.fetch_price(item, game=GameOptions.CS, currency=Currency.EURO)
         lowest = market['lowest_price'].replace("€", "").replace(",", ".")
-        ans = f"{item} || : {lowest}€| Bought for {cost}€ | Quantity: {quantity}"
+        ans = f"{item} || {colored(f'Lowest on market: {lowest}€', 'red')} | Bought for: {cost}€ | Quantity: {quantity}"
         print(ans)
         time.sleep(5)
     f.close()
@@ -92,3 +94,6 @@ def start():
     elif ans == "dev":
         dev()
 start()
+
+if __name__ == '__main__':
+    globals()[sys.argv[1]]()
